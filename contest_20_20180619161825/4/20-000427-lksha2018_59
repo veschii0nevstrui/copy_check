@@ -1,0 +1,11 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+int N,A,B,c;
+cin>>N>>A>>B;
+c=A*B*N*2;
+cout<<c;
+return 0;
+}

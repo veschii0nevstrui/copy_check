@@ -1,0 +1,49 @@
+#include <iostream>
+
+using namespace std;
+
+int main () {
+
+    int a,b,c,d,e,f,g,t,m;
+
+    cin >> a ;
+    cin >> b ;
+    cin >> c ;
+
+    d = a + b + c;
+    e = a * b + c;
+    f = a + b * c;
+    g = a * b * c;
+    t = (a + b) * c;
+     m = a * (b + c);
+
+
+
+
+    if ( d >= e && d >= f && d >= g && d >= t && d >= m ) {
+        cout << d;
+    } else {
+    if ( e >= d && e >= f && e >= g && e >= t && e >= m  ) {
+    cout << e;
+    } else {
+    if ( f >= e && f >= d && f >= g && f >= t && f >= m  ) {
+    cout << f;
+    } else {
+    if ( g >= e && g >= f && g >= d && g >= t && g >= m  ) {
+    cout << g;
+    } else {
+    if ( t >= e && t >= f && t >= g && t >= d && t >= m  ) {
+    cout << t;
+    } else {
+    if ( m >= e && m >= f && m >= g && m >= t && m >= d  ) {
+    cout << m;
+    }
+    }
+    }
+    }
+    }
+    }
+
+    return 0 ;
+
+}

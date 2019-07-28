@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main(){
+int G, L, g, l;
+   cin >> G;
+   cin >> L;
+   l=G-1;
+   g=L-1;
+   cout << g << " ";
+   cout << l;
+   return 0;
+}

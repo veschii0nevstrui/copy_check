@@ -1,0 +1,52 @@
+#include <iostream>>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    int a, b, c;
+    a=n/100%10;
+    b=n/10%10;
+    c=n%10;
+    if (a!=b && b!=c && a!=c){
+            cout<<6;
+    return 0;
+    }
+            if (b==0 && a==c){
+                    cout<<2;
+                    return 0;
+                }
+                if (c==0 && a==b){
+                    cout<<2;
+                    return 0;
+                }
+                if (b==c && b==0){
+                    cout<<1;
+                    return 0;
+                }
+                if (a==b && a==c){
+               cout<<1;
+               return 0;
+            }
+        if (a==b){
+                cout<<3;
+        return 0;
+        }
+            if (b==c){
+                cout<<3;
+                return 0;
+            }
+            if (a==c){
+                cout<<3;
+                return 0;
+            }
+            if (b==0){
+                cout<<4;
+                }
+                if (c==0){
+                    cout<<4;
+                    return 0;
+                }
+
+
+}
+

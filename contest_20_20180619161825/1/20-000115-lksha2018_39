@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int a,b,c,c1,c2;
+cin>>a>>b>>c;
+if(a>b){
+	b=0;
+}
+else {a=0;}
+c1=a+b;
+if(c1>c){
+	c=0;
+}
+else {c1=0;}
+c2=c1+c;
+
+cout<<c2;
+	return 0;
+}

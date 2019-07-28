@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int a, b, c;
+	cin >> a >> b >> c;
+	int s1, s2, s3, s4, s5, s6, s7, s8, s9, s10;
+	s1 = ( a + b ) * c;
+	s2 = a * ( b + c );
+	s3 = a * ( b * c );
+	s4 = a + b + c;
+	s5 = a * b * c;
+	s6 = a + b * c;
+	s7 = a * b + c;
+	int max = s1;
+	if ( max < s2 ) {
+	    max = s2;
+	}
+	if ( max < s3 ) {
+	    max = s3;
+	}
+	if ( max < s4 ) {
+	    max = s4;
+	}
+	if ( max < s5 ) {
+	    max = s5;
+	}
+	if ( max < s6 ) {
+	    max = s6;
+	}
+	if ( max < s7 ) {
+	    max = s7;
+	}
+	cout << max;
+}                                                                     

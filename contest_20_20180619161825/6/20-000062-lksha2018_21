@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main () {
+ int n,k,e;
+ cin>>n>>k;
+ e=n/k;
+ cout<<e;
+ return 0;
+}
+

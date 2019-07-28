@@ -1,0 +1,8 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int a, b, c;
+	cin >> a >> b >> c;
+	int s1 = b * c, s2 = s1 * a, s3 = s2 * 2;
+	cout << s3;
+}

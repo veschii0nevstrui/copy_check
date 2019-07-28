@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int Gv,Lv,S;
+	cin>>Gv>>Lv;
+	S=Gv+Lv;
+	Gv=S-Gv-1;
+	Lv=S-Lv-1;
+	cout<<Gv<<" "<<Lv;
+	return 0;
+}

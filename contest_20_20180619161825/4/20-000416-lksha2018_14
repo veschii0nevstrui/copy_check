@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int n, a, b, c;
+
+    cin >> n >> a >> b;
+    c=2*a*b*n;
+    cout << c;
+
+    return 0;
+ }
+

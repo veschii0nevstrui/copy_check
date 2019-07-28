@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+ int main(){
+     long long n,sum;
+    cin >> n;
+    if(n%2)
+        sum=-(n+1L)/2L;
+    else
+        sum=n/2L;
+    cout << sum<<endl;
+    system("pause");
+    return 0;
+ }

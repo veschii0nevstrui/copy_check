@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+
+
+
+int main(){
+    int n, m;
+	cin >> n >> m;	
+	m=m+1;
+	cout << n*m;
+    return 0;
+}

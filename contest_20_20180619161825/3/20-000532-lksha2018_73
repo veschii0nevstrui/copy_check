@@ -1,0 +1,12 @@
+#include <iostream>
+
+using namespace std;
+  
+     int main() {
+     	int a,b;
+     	cin>>a>>b;
+     	int c=a-1;
+     	int d=b-1;
+     	cout<<d<<" "<<c;
+     	return 0;
+     }

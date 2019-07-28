@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+
+
+
+int main(){
+    int n, k, g=0;
+	cin >> n >> k;	
+	for(int i=1; i<=n; i++){
+		if(i%k==0){
+			g++;
+		}
+	}
+	cout << g;
+    return 0;
+}

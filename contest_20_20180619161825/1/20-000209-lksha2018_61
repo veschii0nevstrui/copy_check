@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+
+int main() {
+
+	int a, b, c;
+
+	cin>>a>>b>>c;
+
+	if (c>a) {
+
+		if (c>b) {
+
+			cout<<c;
+
+		}else{
+
+			cout<<b;
+
+		}
+
+	}else{
+
+		cout<<a;
+
+	}
+ 
+	return 0;
+
+}

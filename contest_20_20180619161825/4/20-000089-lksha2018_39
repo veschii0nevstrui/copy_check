@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int N,a,b,q,s;
+cin>>N>>a>>b;
+s=a*b;
+a=s*2;
+q=a*N;
+cout<<q;
+	return 0;
+}

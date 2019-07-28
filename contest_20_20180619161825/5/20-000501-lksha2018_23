@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a,b,c,d,e,f;
+    cin >> a;
+    f = 6;
+    b = a/100;//первая цифра
+    c = a%100;//две последних
+    d = c/10;//вторая цифра
+    e = c%10;//третья цифра
+    if (b!=0 && d!=0 && e!=0){
+    if (b==d){
+    f=f-3;
+    }
+    if (d==e){
+    f=f-3;
+    }
+    if (e==b) {
+    f=f-3;
+    }
+    if (f==(-3)){
+    f=f+4;
+}
+} else {
+    if (d==0 && e==0){
+    f=f-5;
+} else {
+    if (b==d || b==e) {
+    f=f-4;
+} else {
+    f=f-2;
+}
+}
+}
+    cout << f;
+	return 0;
+}

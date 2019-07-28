@@ -1,0 +1,8 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int b1, b2;
+	cin >> b1 >> b2;
+	int maxsuper = b1 - 1, maxwell = b2 - 1;
+	cout << maxwell << " " << maxsuper; 
+}

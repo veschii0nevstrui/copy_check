@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a, b;
+    cin >> a;
+    a = a - 1;
+    cin >> b;
+    b = b - 1;
+    cout << b << ' ' << a;
+    return 0;
+}

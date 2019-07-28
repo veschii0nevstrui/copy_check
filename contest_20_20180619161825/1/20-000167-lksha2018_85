@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a, b, c, maxx=-999999999;
+    cin >> a >> b >> c;
+    if (a > maxx)
+    {
+        maxx=a;
+    }
+    if (b > maxx)
+    {
+        maxx=b;
+    }
+    if (c > maxx)
+    {
+        maxx=c;
+    }
+    cout << maxx;
+}

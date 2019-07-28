@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int main (){
+     int a;
+     cin>>a;
+     int d1,d2,d3;
+     d1=a/100;
+     d2=a/10%10;
+     d3=a%10;
+     int counter=0;
+     if(d2 == 0){
+          counter++;
+     }
+     if(d3 == 0){
+          counter++;
+     }
+     if(counter == 2){
+          cout<<1;
+     }
+     if(counter == 1 && d1 != d2 && d2 != d3 && d3 != d1){
+          cout<<4;
+     }
+     if(counter == 1 && d1 == d2 ||counter == 1 && d2 == d3 ||counter == 1 && d3 == d1){
+          cout<<2;
+     }
+     if(counter == 0 && d1 != d2 && d2 != d3 && d3 != d1){
+          cout<<6;
+     }
+     if(counter == 0 && d1 == d2 && d2 != d3 || counter == 0 && d2 == d3 && d1 != d3 || counter == 0 && d1 == d3 && d2 != d3){
+          cout<<3;
+     }
+     if(counter == 0 && d1 == d2 && d1 == d3){
+          cout<<1;
+     } 
+     
+}

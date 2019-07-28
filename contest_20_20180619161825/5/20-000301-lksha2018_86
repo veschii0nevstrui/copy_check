@@ -1,0 +1,93 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	int a,c,d,e,s;
+	cin>>a;
+	c=a/100; //2
+	d=a%100; //34
+	e=d/10;//3
+	s=d%10; //4
+	if(c!=0 && e!=0 && s!=0 && c!=e && s!=c && e!=s){
+        cout<<6;
+	}
+	if(c!=0 && e!=0 && s!=0 && c==e && s==c && e==s){
+        cout<<1;
+	}
+	if(c!=0 && e==0 && s!=0 && c!=e && s!=c && e!=s){
+        cout<<4;
+	}
+	if(c==0 && e!=0 && s!=0 && c!=e && s!=c && e!=s){
+        cout<<4;
+	}
+	if(c!=0 && e!=0 && s==0 && c!=e && s!=c && e!=s){
+        cout<<4;
+	}
+	if(c!=0 && e==0 && s==0 && c!=e && s!=c && e!=s){
+        cout<<1;
+	}
+	if(c==0 && e!=0 && s==0 && c!=e && s!=c && e!=s){
+        cout<<1;
+	}
+	if(c==0 && e==0 && s!=0 && c!=e && s!=c && e!=s){
+        cout<<1;
+	}
+	if(c==0 && e==0 && s==0 && c!=e && s!=c && e!=s){
+        cout<<0;
+	}
+
+	if(c!=0 && e!=0 && s!=0 && c==e && s!=c && e!=s){
+        cout<<3;
+	}
+	if(c!=0 && e!=0 && s!=0 && c!=e && s==c && e!=s){
+        cout<<3;
+	}
+	if(c!=0 && e!=0 && s!=0 && c!=e && s!=c && e==s){
+        cout<<3;
+	}
+
+	if(c!=0 && e==0 && s!=0 && c==e && s!=c && e!=s){
+        cout<<2;
+	}
+	if(c!=0 && e==0 && s!=0 && c!=e && s==c && e!=s){
+        cout<<2;
+	}
+	if(c!=0 && e==0 && s!=0 && c!=e && s!=c && e==s){
+        cout<<2;
+	}
+	if(c==0 && e!=0 && s!=0 && c==e && s!=c && e!=s){
+        cout<<2;
+	}
+	if(c==0 && e!=0 && s!=0 && c!=e && s==c && e!=s){
+        cout<<2;
+	}
+	if(c==0 && e!=0 && s!=0 && c!=e && s!=c && e==s){
+        cout<<2;
+	}
+	if(c!=0 && e!=0 && s==0 && c==e && s!=c && e!=s){
+        cout<<2;
+	}
+	if(c!=0 && e!=0 && s==0 && c!=e && s==c && e!=s){
+        cout<<2;
+	}
+	if(c!=0 && e!=0 && s==0 && c!=e && s!=c && e==s){
+        cout<<2;
+	}
+	//
+	if(c!=0 && e==0 && s==0){
+        cout<<1;
+	}
+	if(c==0 && e!=0 && s==0){
+        cout<<1;
+	}
+	if(c==0 && e==0 && s!=0){
+        cout<<1;
+	}
+	if(c==0 && e==0 && s==0){
+        cout<<0;
+	}
+	return 0;
+}
+
+

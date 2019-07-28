@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int a, b, c, d, n, e, f, o, m;
+cin>>c>>e>>f;
+//123
+//cef
+
+	
+	if(c>=e && c>=f){
+		cout<<c;
+		}else{
+		if(e>=f){
+			cout<<e;
+			}else{
+				cout<<f;
+		}
+	}
+
+	return 0;
+}

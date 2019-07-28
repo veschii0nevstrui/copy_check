@@ -1,0 +1,11 @@
+#include<iostream>
+
+using namespace std;
+int main(){
+	int n, a, b, z, p;
+	cin >> n >> a >> b;
+	p=a*b*2;
+	z=p*n;
+	cout << z;
+	return 0;
+}

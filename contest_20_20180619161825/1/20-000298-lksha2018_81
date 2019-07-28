@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main (){
+    int a,b,c;
+    cin >> a >> b >> c;
+    int imax;
+    imax = c;
+    if (a<b){
+        imax = b;
+    }else{
+        imax =a;
+    }
+    if (imax<c){
+        cout << c;
+    } else {
+        cout << imax;
+    }
+ return 0;
+}

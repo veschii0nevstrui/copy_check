@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main () {
+    int a,s,d,f;
+
+    cin>>a>>s>>d;
+
+    if (a <= s && d <= s) {
+        f = s;
+    }
+    if (a <= d && s <= d) {
+        f = d;
+    }
+    if (d <= a && s <= a) {
+        f = a;
+    }
+    cout<<f;
+}

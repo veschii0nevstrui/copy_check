@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main(){
+int a,b,c,x,x1,x2,x3,x4,x5,x6;
+cin >>a;
+cin >>b;
+cin >>c;
+x1=a+b+c,x2=a+b*c,x3=a*b+c,x4=a*b*c,x5=(a+b)*c,x6=a*(b+c);
+x=x1;
+if (x<x2) x=x2;
+if (x<x3) x=x3;
+if (x<x4) x=x4;
+if (x<x5) x=x5;
+if (x<x6) x=x6;
+cout << x ;
+return 0;
+}

@@ -1,0 +1,12 @@
+# include <iostream>
+using namespace std;
+int main ()
+{
+    int a,s,d,w;
+    cin>>a>>s>>d;
+    w=a>=s;
+    if (w==d) cout <<w;
+    if (w<d) cout << d;
+    if (w>d) cout << w;
+return 0;
+}

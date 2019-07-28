@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+int a,s,d,f,g;s;
+
+cin>>a>>s;
+
+d=a+s-1;
+
+f=d-a;
+
+g=d-s;
+
+cout<<f<<" "<<g;
+
+return 0;
+}

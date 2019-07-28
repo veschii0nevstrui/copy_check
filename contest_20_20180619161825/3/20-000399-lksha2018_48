@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int a,b,c;
+	cin >> a >> b;
+	c=a-1;
+	int l;
+	l=b-1;
+	cout << l <<' ' << c;
+	return 0;
+}

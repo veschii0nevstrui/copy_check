@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int a,b,c,mx;
+	cin >> a >> b >> c;
+	mx = a;
+	if (b > mx) {
+        mx = b;
+	}
+	if (c > mx) {
+        mx = c;
+	}
+	cout << mx;
+	return 0;
+}

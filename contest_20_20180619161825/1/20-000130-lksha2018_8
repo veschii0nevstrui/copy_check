@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main (){
+int a,s,d;
+cin>>a>>s>>d;
+if(d>=a&&d>=s){
+    cout<<d;
+}else{
+if(s>=d&&s>=a){
+    cout<<s;
+}else{
+if(a>=d&&a>=s){
+    cout<<a;
+}
+}
+}
+return 0;
+}

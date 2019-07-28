@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main () {
+
+long long n,f,i;
+cin >> n;
+i = n/2;
+if (n%2!=0) {
+    f = -i-1;
+}
+if (n%2 == 0) {
+    f = i;
+}
+cout << f;
+return 0;
+}

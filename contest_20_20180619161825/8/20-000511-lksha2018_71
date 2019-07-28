@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+ int a, b, c;
+ cin>>a>>b>>c;
+ int r, t, y, u, o, d;
+ r=a+b+c;
+ t=a*(b+c);
+ y=a*b*c;
+ u=a+b*c;
+ o=a*b+c;
+ d=(a+b)*c;
+    if (r>=t && r>=y && r>=u && r>=o && r>=d){
+    	cout<<r;
+    	return 0;
+    }
+    if (t>=r && t>=y && t>=u && t>=o && t>=d){
+    	cout<<t;
+    	return 0;
+    }
+    if (y>=r && y>=t && y>=u && y>=o && y>=d){
+    	cout<<y;
+	return 0;
+    }
+    if (u>=r && u>=t && u>=y && u>=o && u>=d){
+    	cout<<u;
+    	return 0;
+    }
+    if (o>=r && o>=t && o>=y && o>=u && o>=d){
+    	cout<<o;
+    	return 0;
+    }
+    if (d>=r && d>=t && d>=y && d>=u && d>=o){
+    	cout<<d;
+    	return 0;
+    }
+}

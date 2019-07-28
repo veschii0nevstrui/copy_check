@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int n, m, c;
+	//n==10 m==5;
+	cin>>n>>m;
+	
+	c=n*(m+1);
+	
+	cout<<c;
+	return 0;
+}

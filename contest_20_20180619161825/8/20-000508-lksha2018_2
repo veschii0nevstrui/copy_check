@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main () {
+int a, b, c, x;
+cin >> a >> b >> c;
+x = 0;
+
+if (a * b * c > x) {
+x = a * b * c;
+}
+if (a * b + c > x) {
+x = a * b + c;
+}
+if (a + b * c > x) {
+x = a + b * c;
+}
+if (a + b + c > x) {
+x = a + b + c;
+}
+if ((a + b) * c > x) {
+x = (a + b) * c;
+}
+if (a * (b + c) > x) {
+x = a * (b + c);
+}
+   cout << x;
+}

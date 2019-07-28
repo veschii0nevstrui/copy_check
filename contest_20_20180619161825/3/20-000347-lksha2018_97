@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int a, b, c, d, n, e, f, o, m;
+cin>>a>>b;
+//4 7 ;   //6 3;
+	c=a+b-1;
+	n=c-a;
+	d=c-b;
+	cout<<n<<' '<<d;
+	
+	
+
+	return 0;
+}

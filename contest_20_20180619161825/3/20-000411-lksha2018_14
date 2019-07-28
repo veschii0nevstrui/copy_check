@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int a, b, c, d, f;
+
+    cin >> a >> b;
+    c=a+b-1;
+    d=c-a;
+    f=c-b;
+    cout << d << " " << f;
+
+    return 0;
+ }
+

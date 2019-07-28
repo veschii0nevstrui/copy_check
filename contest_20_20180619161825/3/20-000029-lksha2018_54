@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b,c,d,e,f;
+    cin>>a>>b;
+    e=a+b;
+    f=e-1;
+    c=f-a;
+    d=f-b;
+    cout<<c<<" "<<d;
+    return 0;
+    }

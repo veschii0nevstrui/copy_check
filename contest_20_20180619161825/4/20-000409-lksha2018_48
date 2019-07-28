@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+int n,a,b,g;
+cin >> n >> a >> b;
+g = a*b;
+g = g*n;
+g = g*2;
+cout << g;
+return 0;
+}

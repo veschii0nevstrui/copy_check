@@ -1,0 +1,9 @@
+# include <iostream>
+using namespace std;
+int main(){
+int n,a,b,p;
+cin>>n>>a>>b;
+p=n*a*b*2;
+cout<<p;
+return 0;
+}

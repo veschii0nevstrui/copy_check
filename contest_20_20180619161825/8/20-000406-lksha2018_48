@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+int arbidol,lol,kek,cheburek,mx,a,b,c;
+cin >> a >> b >> c;
+arbidol = a+b*c;
+mx = arbidol;
+kek = a*b+c;
+if (kek > mx) {
+	mx = kek;
+}
+lol = (a+b)*c;
+if (lol > mx) {
+	mx = lol;
+}
+cheburek = a*(b+c);
+if (cheburek > mx) {
+	mx = cheburek;
+}
+int lil,kik;
+lil = a*b*c;
+if (lil > mx) {
+	mx = lil;
+}
+kik = a+b+c;
+if (kik > mx) {
+	mx = kik;
+}
+cout << mx;
+return 0;
+}

@@ -1,0 +1,10 @@
+#include <iostream>
+
+using namespace std;
+
+int main (){
+    int c,a,b,n,s;
+    cin>>b>>a>>n;
+     s=n*a*b*2;
+    cout<<s;
+}

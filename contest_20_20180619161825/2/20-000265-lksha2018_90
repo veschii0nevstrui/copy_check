@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main (){
+    int n,k,m;
+    cin>>n>>m;
+    k=n*(m+1);
+    cout<<k;
+
+
+
+}

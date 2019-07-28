@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int n, k;
+    int c = 0;
+    cin >> n >> k;
+    for ( int d = k; d <= n; d++ )
+        if ( d % k == 0) c++;
+    cout << c;
+    cin.get(); cin.get();
+    return 0;
+}

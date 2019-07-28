@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b,c,d,e,f;
+  cin >>a>>b>>c;
+  d=b*c;// площадь одной панили
+  e=d*a;// площадь всех панелей с одной стороны
+  f=e*2;// с двух сторон
+  cout<<f;
+  return 0;
+}

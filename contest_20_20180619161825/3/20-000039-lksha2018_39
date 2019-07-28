@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int a,b,c,s,q1,qq,q;
+cin>>a>>b;
+c=a+b;
+q=a+1;
+s=c-q;
+qq=b+1;
+q1=c-qq;
+cout<<s<<" "<<q1;
+	return 0;
+}

@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	int r,a,b,m;
+	cin>>a>>r>>b;
+	if(r<a){
+        m=a;
+	}
+	else{
+        m=r;
+	}
+	if(m<b){
+       cout<<b;
+	}
+	else{
+        cout<<m;
+	}
+	return 0;
+}
+
+
+

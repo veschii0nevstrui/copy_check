@@ -1,0 +1,32 @@
+#!/bin/bash
+g++ -std=c++11 -o sort sort.cpp
+g++ -std=c++11 -o levenstein levenstein.cpp
+for contest in $(ls)
+do
+    if [[ $contest == contest* ]]
+    then
+        echo $contest
+        ./flush $contest
+        for dir in $(ls $contest)
+        do
+            echo "    "$dir
+            for file_one in $(ls $contest"/"$dir)
+            do
+                for file_two in $(ls $contest"/"$dir)
+                do
+                    if [[ $file_one != $file_two ]]
+                    then
+                        a=$(./levenstein $contest"/"$dir"/"$file_one $contest"/"$dir"/"$file_two)
+                        echo $file_one $file_two $a >> $contest"/"$dir"_help.txt"
+                    fi
+                done
+            done
+            if [[ dir != *.txt ]]
+            then
+                cat $contest"/"$dir"_help.txt" | ./sort > $contest"/"$dir".txt"
+                echo $dir >> $contest"/tasks.txt"
+                rm $contest"/"$dir"_help.txt"
+            fi
+        done
+    fi
+done

@@ -1,0 +1,8 @@
+#include <iostream>
+using namespace std;
+int main () {
+int a,b,n,x;
+cin >> a >> b >> n;
+x = a * b * 2 * n;
+cout << x;
+}

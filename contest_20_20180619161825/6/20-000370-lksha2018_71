@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n, k;
+	cin>>n>>k;
+	int y;
+	y=n/k;
+	cout<<y;
+	return 0;
+}

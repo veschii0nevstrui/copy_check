@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n,m,a,b,c;
+    cin>>a>>b>>c;
+    if(a != 1 && b != 1 && c != 1 ){	//000
+            cout<<a*b*c;
+            return 0;
+    }
+    if(a == 1 && b == 1 && c == 1){		//111
+        cout<<3;
+        return 0;
+    }
+    if(a == 1 && b!= 1 && c != 1){		//100
+        	cout<<c*(a+b);
+        	return 0;
+    }
+    if(a == 1 && b == 1 && c != 1){		//110
+        cout<<c*(b+a);
+        return 0;
+    }
+    if(a != 1 && b != 1 && c == 1){		//001
+        cout<<a*(b+c);
+        return 0;
+    }
+    if(a != 1 && b == 1 && c == 1){		//011
+        cout<<a*(b+c);
+        return 0;
+    }
+    if(a == 1 && b != 1 && c == 1){		//101
+        cout<<b+c+a;
+        return 0;
+    }
+     if(a != 1 && b == 1 && c != 1){	//010
+        if(a<c){
+        	cout<<c*(b+a);
+        	return 0;
+        }else{
+        	cout<<a*(b+c);
+        	return 0;
+        }
+        return 0;
+    }
+    return 0;
+}

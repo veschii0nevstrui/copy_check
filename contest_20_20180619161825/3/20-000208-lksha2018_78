@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b,y,z,sum;
+    cin>>a>>b;
+    sum=a+b-1;
+    y=sum-a;
+    z=sum-b;
+    cout<<y<<' '<<z;
+}
+

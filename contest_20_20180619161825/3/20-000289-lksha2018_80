@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main () {
+    int a,s,d,f,w,t;
+
+    cin>>a>>s;
+
+    f = a + s - 2;
+
+    if (f != 10 && f < 10) {
+        d = f - (a - 1);
+        w = f - (s - 1);
+    } else {
+        d = f - (a - 1);
+        w = f - (s - 1);
+    }
+
+
+    cout<<d<<' '<<w;
+}
+
+
