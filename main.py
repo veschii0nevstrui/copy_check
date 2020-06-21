@@ -68,7 +68,7 @@ class main_window(QWidget):
         self.setLayout(self.grid)      
 
         self.setGeometry(200, 200, 1000, 500)
-        self.setWindowTitle('Проверяем детей на списывание')
+        self.setWindowTitle('Проверяем этих пидорасов на списывание')
 
         self.show()
 
@@ -191,7 +191,7 @@ class main_window(QWidget):
     def help(self):
         reply = QMessageBox.question(self, "Я помогу тебе", "Пользоваться этой программой довольно просто. Надо поместить её и ещё несколько файлов в папку со скачанными контестами, и запустить генератор. Он некоторое время поработает, и после этого появятся списки на проверку. Вы можете выбрать контест или какую-нибудь конкретную задачу. Для этого необходимо выбрать папку с контестом или папку с задачей. Вы можете банить решения, тогда их списко будет заноситься в специальный файлик, с которым вы потом можете делать всё, что угодно. Остались ли вопросы?", QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
         if reply == QMessageBox.Yes:
-            reply = QMessageBox.question(self, "Ну тут как бы ничего уже не поделать", "Обратитесь к создателю программы, он добрый, он поможет", QMessageBox.Yes, QMessageBox.Yes) 
+            reply = QMessageBox.question(self, "Ну тут как бы ничего уже не поделать", "Ну тогда вы долбоёб и вам уже ничего не поможет", QMessageBox.Yes, QMessageBox.Yes) 
     
     def next_codes(self):
         self.number_pair += 1
@@ -226,7 +226,7 @@ class main_window(QWidget):
         self.show_task()
 
     def read(self, name):
-        f = open(name)
+        f = open(name, encoding='latin-1')
         ans = []
         for line in f:
             ans += [line]
